@@ -1,0 +1,14 @@
+{
+	"restartable": "rs",
+    "watch": [
+		"src/"
+	],
+	"ext": "ts,json",
+	"ignore": [
+		"src/**/*.spec.ts",".git", "node_modules/**/node_modules", ".editorconfig"
+	],
+	"exec": "ts-node --files -r dotenv/config ./src/index.ts",
+    "env": {
+        "NODE_ENV": "development"
+    }
+}
